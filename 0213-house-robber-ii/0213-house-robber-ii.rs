@@ -16,7 +16,6 @@ impl Solution {
 
         for i in 2..len-1 {
             dp[i] = max(dp[i-1], dp[i-2] + nums[i]);
-            dp2[i] = max(dp2[i-1], dp2[i-2] + nums[i]);
         }
 
         for i in 2..len {
